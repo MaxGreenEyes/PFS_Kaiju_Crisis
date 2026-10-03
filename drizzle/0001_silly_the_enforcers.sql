@@ -1,0 +1,1 @@
+ALTER TABLE `event_state` ADD `settings_json` text DEFAULT '{}' NOT NULL;

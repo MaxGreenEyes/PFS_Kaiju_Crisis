@@ -1,0 +1,4 @@
+import { isAdmin } from '@/lib/auth';
+import { Dashboard } from '@/components/dashboard';
+export const dynamic='force-dynamic';
+export default async function AdminPage() {return <Dashboard admin={await isAdmin()} view="admin"/>;}
